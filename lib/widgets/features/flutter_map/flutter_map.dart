@@ -6,24 +6,7 @@ import 'map_options.dart';
 FlutterMap flutterMap() => FlutterMap(
   options: mapOptions(),
   children: [
-    TileLayer(
-      urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
-      userAgentPackageName: "com.yoneyo.tests.flutter_test_20241020_2202",
-    ),
-    RichAttributionWidget(
-      popupInitialDisplayDuration: const Duration(seconds: 5),
-      animationConfig: const ScaleRAWA(),
-      showFlutterMapAttribution: false,
-      attributions: [
-        TextSourceAttribution('OpenStreetMap contributors',
-            onTap: () async => {}),
-        const TextSourceAttribution(
-          'This attribution is the same throughout this app, except '
-              'where otherwise specified',
-          prependCopyright: false,
-        ),
-      ],
-    ),PolylineLayer(
+    PolylineLayer(
       polylines: [
         Polyline(
           points: [
