@@ -4,6 +4,13 @@ import '/widgets/pages/pages.dart';
 //
 // メインのアプリケーションウィジェット。
 //
-MaterialApp mainApp() => const MaterialApp(
-  home: Home(),
-);
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Home(),
+    );
+  }
+}

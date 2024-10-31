@@ -3,6 +3,6 @@ import '/widgets/apps/main_app.dart';
 
 void main() {
   runApp(
-    mainApp(),
+    const MainApp(),
   );
 }
